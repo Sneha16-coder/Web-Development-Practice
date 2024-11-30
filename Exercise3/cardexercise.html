@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing the Card</title>
+    <style>
+    *{
+         /* text-align: center; */
+         background-color:azure;
+    }
+    .container{
+        height:550px;
+        width:300px;
+        border : 2px solid ;
+        border-radius: 10px;
+        background-color: white;
+        position:fixed;
+        left: 45%;
+    }
+    .img{
+        height: 200px;
+        width : 280px; 
+        border: 1px solid black;
+        border-radius: 8px;
+        margin : 8px;
+        background-image: url("koranti2.jpg");
+        background-size: cover;
+    }
+    .b1{
+        margin: 8px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1{
+        font-size: 30px;
+        background-color: white;
+        margin : 8px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+    p{
+        font-size: 16px;
+        background-color: white;
+        margin: 8px;
+        text-align: justify;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #btn{
+        margin: 8px;
+        height: 35px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(200, 220, 251);
+        color: rgb(9, 9, 249);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position : relative;
+        left:50px;
+        top: 1px;
+
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+       <button class="b1" onclick="#">Address</button>
+       <button class="b1" onclick="#">Contact Us</button>
+       <h1>Koranti Hanuman</h1>
+       <p>Less than a hundred years old, the sifnificance of this temple lies in the massive statue of the Hindu God Hanuman at the Enterance. The large idol of Hanuman is kneeling as two royal elephants flank the statue. Locally called 'Guarantee' Hanuman, this deity is believed to grant all wishes.</p>
+       <button id="btn" onclick="#">Know More About Temple</button>
+    </div>
+    
+</body>
+</html>
