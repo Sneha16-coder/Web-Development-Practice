@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Noto+Sans+JP:wght@100..900&family=Oleo+Script:wght@400;700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Roboto slab', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(249, 4, 188);
+            padding: 20px;
+        }
+
+        .container {
+            height: 67vh;
+            width: 30vw;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: blanchedalmond;
+        }
+
+        #result-section {
+            height: 12vh;
+            width: 29vw;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 5px;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: aquamarine;
+            padding: 3px;
+
+        }
+
+        button {
+            height: 8vh;
+            width: 6vw;
+            margin: 10px;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+
+        #clear {
+            width: 96%;
+        }
+
+        button:hover {
+            color: white;
+            background-color: rgb(76, 74, 74);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Basic Calculator Designed by Sneha</h1>
+    <div class="container">
+        <div id="result-section"></div>
+
+        <button onclick="currentDisplay= currentDisplay + '7';
+            document.querySelector('#result-section').innerText=currentDisplay;">7</button>
+
+        <button onclick="currentDisplay=currentDisplay + '8';
+            document.querySelector('#result-section').innerText=currentDisplay;">8</button>
+
+        <button onclick="currentDisplay=currentDisplay + '9';
+            document.querySelector('#result-section').innerText=currentDisplay;">9</button>
+
+        <button onclick="currentDisplay=currentDisplay + '+';
+            document.querySelector('#result-section').innerText=currentDisplay;">+</button>
+
+        <button onclick="currentDisplay=currentDisplay + '4';
+            document.querySelector('#result-section').innerText=currentDisplay;">4</button>
+
+        <button onclick="currentDisplay=currentDisplay + '5';
+            document.querySelector('#result-section').innerText=currentDisplay;">5</button>
+
+        <button onclick="currentDisplay=currentDisplay + '6';
+            document.querySelector('#result-section').innerText=currentDisplay;">6</button>
+
+        <button onclick="currentDisplay=currentDisplay + '-';
+            document.querySelector('#result-section').innerText=currentDisplay;">-</button>
+
+        <button onclick="currentDisplay=currentDisplay + '1';
+            document.querySelector('#result-section').innerText=currentDisplay;">1</button>
+
+        <button onclick="currentDisplay=currentDisplay + '2';
+            document.querySelector('#result-section').innerText=currentDisplay;">2</button>
+
+        <button onclick="currentDisplay=currentDisplay + '3';
+            document.querySelector('#result-section').innerText=currentDisplay;">3</button>
+
+        <button onclick="currentDisplay=currentDisplay + '*';
+            document.querySelector('#result-section').innerText=currentDisplay;">x</button>
+
+        <button onclick="currentDisplay=currentDisplay + '/';
+            document.querySelector('#result-section').innerText=currentDisplay;">/</button>
+
+        <button onclick="currentDisplay=currentDisplay + '0';
+            document.querySelector('#result-section').innerText=currentDisplay;">0</button>
+
+        <button onclick="currentDisplay=currentDisplay + '.';
+            document.querySelector('#result-section').innerText=currentDisplay;">.</button>
+
+        <button onclick="currentDisplay=eval(currentDisplay);
+            document.querySelector('#result-section').innerText=currentDisplay;">=</button>
+
+        <button id="clear" onclick="currentDisplay='';
+            document.querySelector('#result-section').innerText=currentDisplay;">Clear</button>
+
+    </div>
+
+    <script>
+        let currentDisplay = '';
+        document.querySelector('#result-section').innerText = currentDisplay;
+
+    </script>
+
+</body>
+
+</html>
